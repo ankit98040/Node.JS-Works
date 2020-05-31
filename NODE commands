@@ -1,0 +1,23 @@
+NODE commands
+
+npm init - inside the project folder to initialise the packages
+npm install express  - to install express js for the current project
+
+const express = require("express");
+const app = express();
+
+to include express in the web app
+
+
+app.listen(3800, function(){
+	console.log("server started on 3800");
+});
+
+
+this will set up the server on which port you want to run
+
+to run the server
+
+node  filename.js ----everytime you make change in the webapp you need to manually restart the server
+
+nodemon filename.js ---automatically restarts the server
