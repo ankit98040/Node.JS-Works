@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULATOR</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<style type="text/css">
+		h1{
+			font-family: fantasy;
+			border: 2px solid pink;
+			width: 300px;
+			padding: 10px 6px 6px 8px;
+		}
+		body{
+			background-image: url("https://s3-us-west-2.amazonaws.com/lightstalking-assets/wp-content/uploads/2017/09/14013627/32630693092_94df99b038_k.jpg");
+		}
+		button{
+			padding:10px 10px 10px 10px;
+		}
+		button:hover{
+			background-color: blue;
+			color: white;
+			font-family: fantasy;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>CALCULATOR</h1>
+	
+	<form id="myform" action="/" method="post">
+		<input type="number" name="num1" placeholder="1st Number">
+		<input type="number" name="num2" placeholder="2nd Number">
+		<br><br>
+		<button type="submit" class="btn btn-primary" name="submit">Calculate</button>
+	</form>
+	</center>
+
+	<script>
+		$(document).ready(function () {
+			//focus & blur
+			$('#myform input').focus(function(){
+				$(this).css('background', 'pink');
+
+				$(this).blur(function(){
+					$(this).css('background', 'none');
+				});
+			});
+		});
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
