@@ -1,0 +1,11 @@
+<%- include('includes/head') %>
+
+<h1>hello from EJS</h1>
+
+<% if (showTitle) { %>
+	<h1><%= title %></h1>
+<% } %>
+
+<% people.forEach(function(person){ %>
+	<li> <%= person %></li>
+<% }) %>
