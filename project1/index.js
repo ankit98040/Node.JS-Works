@@ -27,17 +27,19 @@ app.get("/pug", function(req,res){
 })
 
 app.get("/", function(req,res){
-	res.send("hey guys");
+	res.send("hey guys welcome to home");
 });
 
 app.get('/about', function(req,res){
 	
-	res.sendFile(__dirname + "/about.html");
+	//res.sendFile(__dirname + "/about.html");
+	res.render('about')
 })
 
 app.get('/contact', function(req,res){
 	
-	res.sendFile(__dirname + "/life.html");
+	//res.sendFile(__dirname + "/life.html");
+	res.render('contacts');
 })
 
 app.use(bodyparser.json())
