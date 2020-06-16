@@ -1,0 +1,16 @@
+{
+  "name": "mongo_work-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ankit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^2.2.36",
+    "mongoose": "^5.9.18"
+  }
+}

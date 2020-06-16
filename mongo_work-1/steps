@@ -1,0 +1,9 @@
+1. npm install mongodb@2.2.36
+
+after adiing data to mongodb switch to another terminal
+
+	1 mongo
+	2 show dbs
+	3 use myproject
+	4 show collections
+	5 db.users.find();
